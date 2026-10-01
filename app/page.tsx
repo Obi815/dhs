@@ -1,19 +1,22 @@
-import Hero from "@/app/components/Nav";
+import Image from "next/image";
+import Nav from "@/app/components/Nav";
 import About from "@/app/components/sections/About";
-import Target from "@/app/components/sections/Target";
+import Services from "@/app/components/sections/Services";
 import Activities from "@/app/components/sections/Activities";
+import Home from "@/app/components/sections/Home";
 
 
-export default function Home() {
+export default function main() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Target />
-      <Activities/>
-      {/* <Hours />
-      <Contact /> */}
-    </main>
+      <main>
+        <Nav />
+        <Home/>
+        <Services />
+        <Activities/>
+        <About />
+        {/* <Hours />
+        <Contact /> */}
+      </main>
   );
 }
 
