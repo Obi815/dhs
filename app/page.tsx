@@ -13,7 +13,7 @@ export default function main() {
         <Home/>
         <Services />
         <Activities/>
-        <About />
+        {/* <About /> */}
         {/* <Hours />
         <Contact /> */}
       </main>

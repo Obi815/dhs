@@ -1,5 +1,5 @@
-
 interface Activity {
+  icon: string;
   title: string;
   examples: string[];
   note?: string;
@@ -8,6 +8,7 @@ interface Activity {
 // * Information used to loop through and create Cards with 
 const activities: Activity[] = [
   {
+    icon: '/cards.png',
     title: "Social and Recreational Activities",
     examples: [
       "Games and group activities",
@@ -19,6 +20,7 @@ const activities: Activity[] = [
     ],
   },
   {
+    icon: '/painting.png',
     title: "Arts, Music, and Cultural Activities",
     examples: [
       "Arts and crafts",
@@ -30,6 +32,7 @@ const activities: Activity[] = [
     ],
   },
   {
+    icon: '/computer.png',
     title: "Education and Life-Skills Activities",
     examples: [
       "Basic technology and digital literacy",
@@ -42,6 +45,7 @@ const activities: Activity[] = [
     ],
   },
   {
+    icon: '/running.png',
     title: "Wellness and Physical Activity",
     examples: [
       "Stretching",
@@ -55,6 +59,7 @@ const activities: Activity[] = [
     note: "These activities are not intended to constitute medical treatment or rehabilitation services.",
   },
   {
+    icon: '/park.png',
     title: "Community Integration",
     examples: [
       "Local outings",
