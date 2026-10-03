@@ -1,5 +1,6 @@
 interface Activity {
   icon: string;
+  photo: string;
   title: string;
   examples: string[];
   note?: string;
@@ -9,6 +10,7 @@ interface Activity {
 const activities: Activity[] = [
   {
     icon: '/cards.png',
+    photo: '/activities/chess.png',
     title: "Social and Recreational Activities",
     examples: [
       "Games and group activities",
@@ -21,6 +23,7 @@ const activities: Activity[] = [
   },
   {
     icon: '/painting.png',
+    photo: '/activities/canvas.png',
     title: "Arts, Music, and Cultural Activities",
     examples: [
       "Arts and crafts",
@@ -33,6 +36,7 @@ const activities: Activity[] = [
   },
   {
     icon: '/computer.png',
+    photo: '/activities/lesson.png',
     title: "Education and Life-Skills Activities",
     examples: [
       "Basic technology and digital literacy",
@@ -46,6 +50,7 @@ const activities: Activity[] = [
   },
   {
     icon: '/running.png',
+    photo: '/activities/yoga.png',
     title: "Wellness and Physical Activity",
     examples: [
       "Stretching",
@@ -60,6 +65,7 @@ const activities: Activity[] = [
   },
   {
     icon: '/park.png',
+    photo: '/activities/outdoor.png',
     title: "Community Integration",
     examples: [
       "Local outings",
