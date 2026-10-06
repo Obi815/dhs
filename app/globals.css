@@ -16,6 +16,13 @@ html {
   --font-mono: var(--font-geist-mono);
 }
 
+img {
+  pointer-events: none;      /* right-click and clicks land on the box behind the photo, not the photo */
+  user-select: none;         /* can't highlight it */
+  -webkit-user-drag: none;   /* can't drag it to the desktop */
+  -webkit-touch-callout: none; /* stops the "Save image" popup on iPhones */
+}
+
 
 body {
   background: var(--background);
