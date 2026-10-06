@@ -2,15 +2,22 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div id="services" className="grid grid-cols-4 gap-10 px-14 py-12 pb-10">
+    //* grid-cols-4 to grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 (1 across on phones, 2 on tablets, 4 on laptops)
+    //* gap-10 to gap-6 md:gap-10, px-14 to px-6 md:px-14 (smaller spacing on phones)
+    <div id="services" className="scroll-mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 px-6 md:px-14 py-12 pb-10">
 
-      {/* Who We Server Title  */}
-      <div className="col-span-4 m-8 font-medium pt-4">
-        <h1 className="text-5xl text-center font-semibold">Who We Serve</h1>
-        <p className="text-medium text-center p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, natus.</p>
+      {/* Who We Serve Title */}
+      {/* col-span-4 to col-span-full (spans all columns, however many there are) */}
+      {/* m-8 to my-4 md:m-8 (less margin on phones) */}
+      <div className="col-span-full my-4 md:m-8 font-medium pt-4">
+        {/* text-5xl to text-3xl md:text-5xl (smaller title on phones) */}
+        <h1 className="text-3xl md:text-5xl text-center font-semibold">Who We Serve</h1>
+        <p className="text-base md:text-lg text-center p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, natus.</p>
       </div>
-      {/* Card 1 — Adults with Disabilities */}
-      <div className="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white">
+
+      {/* Card 1: Adults with Disabilities */}
+      {/* p-4 to p-6 so all four cards match */}
+      <div className="flex flex-col items-center gap-2 p-6 rounded-2xl bg-white">
         <Image
           src="/disabled.png"
           alt="Adults with disabilities"
@@ -18,56 +25,59 @@ export default function Services() {
           height={48}
           className="h-auto"
         />
-        <h3 className="font-bold text-lg text-sky-500">Adults with Disabilities</h3>
-        <p className="text-lg text-center">Adults with disabilities who can benefit from a structured, accessible, 
+        {/* added text-center */}
+        <h3 className="font-bold text-lg text-sky-500 text-center">Adults with Disabilities</h3>
+        <p className="text-lg lg:text-base text-center">Adults with disabilities who can benefit from a structured, accessible, 
           non-medical daytime environment, social engagement, 
           recreation, life-skills activities, and community participation.</p>
       </div>
 
-      {/* Older Adults Card */}
+      {/* Card 2: Older Adults */}
       <div className="flex flex-col items-center gap-2 p-6 rounded-2xl bg-white">
         <Image
           src="/oldppl.png"
-          alt="Adults with disabilities"
+          alt="Older adults"
           width={100}
           height={48}
           className="h-auto"
         />
-          <h3 className="font-bold text-lg text-sky-500 text-center">Older Adults</h3>
-          <p className="text-lg text-center">Older adults who may benefit from meaningful daytime activities, 
-            social interaction, structured routines, recreation, 
-            cultural activities, wellness-focused programming, and community engagement.</p>
+        <h3 className="font-bold text-lg text-sky-500 text-center">Older Adults</h3>
+        <p className="text-lg lg:text-base text-center">Older adults who may benefit from meaningful daytime activities, 
+          social interaction, structured routines, recreation, 
+          cultural activities, wellness-focused programming, and community engagement.</p>
       </div>
-      
-      {/* Veterans Card  */}
+
+      {/* Card 3: Veterans */}
       <div className="flex flex-col items-center gap-2 p-6 rounded-2xl bg-white">
         <Image
           src="/veteran.png"
-          alt="Adults with disabilities"
+          alt="Veterans"
           width={100}
           height={48}
           className="h-auto"
         />
         <h3 className="font-bold text-lg text-sky-500 text-center">Veterans</h3>
-        <p className="text-lg text-center">Veterans who may benefit from social connection, structured activities, 
+        <p className="text-lg lg:text-base text-center">Veterans who may benefit from social connection, structured activities, 
           community participation, recreational opportunities, and access to an inclusive community environment</p>
       </div>
 
-      {/* Familes & Caregivers card */}
+      {/* Card 4: Families and Caregivers */}
       <div className="flex flex-col items-center gap-2 p-6 rounded-2xl bg-white">
         <Image
           src="/familyCare.png"
-          alt="Adults with disabilities"
+          alt="Families and caregivers"
           width={100}
           height={48}
           className="h-auto"
         />
-        <h3 className="font-bold text-lg text-sky-500">Families & Caregivers</h3>
-        <p className="text-lg text-center">Families and caregivers will be secondary beneficiaries of the program through access to 
+        <h3 className="font-bold text-lg text-sky-500 text-center">Families &amp; Caregivers</h3>
+        <p className="text-lg lg:text-base text-center">Families and caregivers will be secondary beneficiaries of the program through access to 
           structured daytime programming that may provide additional support and respite opportunities.</p>
       </div>
-      <div className="col-span-4 justify-items-center m-10 font-medium p-4">
-        <p className="tex-lg">The categories above are planning categories and may overlap. 
+
+      {/* Note at the bottom */}
+      <div className="col-span-full text-center my-4 md:m-10 font-medium p-4">
+        <p className="text-base md:text-lg">The categories above are planning categories and may overlap. 
           They are not intended to establish eligibility requirements or guarantee a particular demographic distribution.</p>
       </div>
     </div>
