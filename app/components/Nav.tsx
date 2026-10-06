@@ -4,7 +4,7 @@ export default function Nav(){
       <div className="col-start-1 text-lg text-sky-500 font-bold ">DHS</div>
       <nav className="col-start-2 flex justify-end gap-8">
         <a href="#home" className="hover:text-sky-500">Home</a>
-        <a href="#target" className="hover:text-sky-500">Services</a>
+        <a href="#services" className="hover:text-sky-500">Services</a>
         <a href="#activities" className="hover:text-sky-500">Activities</a>
         <a href="#about" className="hover:text-sky-500">About</a>
         <a href="#hours" className="hover:text-sky-500">Hours</a>
