@@ -33,7 +33,7 @@ export default function Nav(){
         <a href="#services" className="hover:text-sky-500">Services</a>
         <a href="#activities" className="hover:text-sky-500">Activities</a>
         <a href="#about" className="hover:text-sky-500">About</a>
-        <a href="#hours" className="hover:text-sky-500">Hours</a>
+        {/* <a href="#hours" className="hover:text-sky-500">Hours</a> */}
         <a href="#contact" className="hover:text-sky-500">Contact</a>
       </nav>
     </header>
