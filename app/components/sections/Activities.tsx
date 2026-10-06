@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Activities() {
   return (
-    <div id='activities' className="pb-10 bg-linear-to-b from-orange-100 to-white">
+    <div id='activities' className="pb-20 bg-linear-to-b from-orange-100 to-white">
       {/* TODO: Add Title for Page */}
       <div className='pt-10 pb-4 text-center'>
         <h1 className='text-5xl font-semibold p-4 mt-8'>Activities We Provide</h1>
