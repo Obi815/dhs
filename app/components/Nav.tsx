@@ -15,18 +15,19 @@ export default function Nav(){
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
    return (
-    // CHANGED: added fixed top-0 left-0 w-full z-50 transition-all duration-300
-    // CHANGED: background is now see-through at the top, white with a shadow after scrolling
+    //* added fixed top-0 left-0 w-full z-50 transition-all duration-300
+    //* background is now see-through at the top, white with a shadow after scrolling
     <header
       className={`fixed top-0 left-0 w-full z-50 grid grid-cols-2 items-center px-14 py-4 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      {/* CHANGED: logo is white at the top, sky blue after scrolling */}
+      {/* logo is white at the top, sky blue after scrolling */}
       <div className={`col-start-1 text-lg font-bold ${scrolled ? 'text-sky-500' : 'text-white'}`}>
         DHS
       </div>
-      {/* CHANGED: links are white at the top, dark after scrolling */}
+      
+      {/* links are white at the top, dark after scrolling */}
       <nav className={`col-start-2 flex justify-end gap-8 ${scrolled ? 'text-black' : 'text-white'}`}>
         <a href="#home" className="hover:text-sky-500">Home</a>
         <a href="#services" className="hover:text-sky-500">Services</a>

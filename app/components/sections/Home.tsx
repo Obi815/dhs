@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative h-[900px]"> {/* pick a height that looks right */}
+    <div id='home' className="relative h-[900px]"> {/* pick a height that looks right */}
       <Image
         src="/walkingPpl.png"
         alt="Adults with disabilities"

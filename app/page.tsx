@@ -12,8 +12,10 @@ export default function main() {
         <Nav />
         <Home/>
         <Services />
-        <Activities/>
-        {/* <About /> */}
+        <div className="bg-linear-to-b from-orange-100 to-white">
+          <Activities/>
+          <About />
+        </div>
         {/* <Hours />
         <Contact /> */}
       </main>
