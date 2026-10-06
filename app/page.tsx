@@ -4,6 +4,7 @@ import About from "@/app/components/sections/About";
 import Services from "@/app/components/sections/Services";
 import Activities from "@/app/components/sections/Activities";
 import Home from "@/app/components/sections/Home";
+import Contact from "./components/sections/Contact";
 
 
 export default function main() {
@@ -16,8 +17,7 @@ export default function main() {
           <Activities/>
           <About />
         </div>
-        {/* <Hours />
-        <Contact /> */}
+        <Contact/>
       </main>
   );
 }
