@@ -1,4 +1,19 @@
+'use client';
+import { useState, type FormEvent } from "react";
 export default function Contact() {
+  // These remember what the person types
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  // This runs when they click Send
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault(); // stops the page from reloading
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nReply to: ${email}`);
+    window.location.href = `mailto:info@example.com?subject=${subject}&body=${body}`;
+  }
+
   return (
     <section id="contact" className="scroll-mt-20 px-6 py-24">
       <div className="max-w-6xl mx-auto">
@@ -39,7 +54,7 @@ export default function Contact() {
             </div>
 
             </div>
-          {/* Map */}
+            {/* Map */}
             <div className="rounded-2xl overflow-hidden shadow-md min-h-72">
             <iframe
                 src="https://www.google.com/maps?q=123+Main+St,+San+Jose,+CA&output=embed"
@@ -48,7 +63,41 @@ export default function Contact() {
                 loading="lazy"
             />
             </div>
-          <div className="md:col-span-2 h-48 bg-orange-200 rounded-2xl">Bottom: form</div>
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="md:col-span-2 bg-white rounded-2xl p-6 shadow-md">
+            <h4 className="text-lg font-bold mb-4">Send us a message</h4>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                <input
+                type="text"
+                required
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2.5"
+                />
+                <input
+                type="email"
+                required
+                placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2.5"
+                />
+            </div>
+
+            <textarea
+                required
+                placeholder="How can we help?"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2.5 h-28 mb-3"
+            />
+
+            <button type="submit" className="bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-2.5 rounded-lg">
+                Send message
+            </button>
+            </form>
         </div>
 
       </div>
