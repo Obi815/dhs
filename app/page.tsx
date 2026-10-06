@@ -5,6 +5,7 @@ import Services from "@/app/components/sections/Services";
 import Activities from "@/app/components/sections/Activities";
 import Home from "@/app/components/sections/Home";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/Footer";
 
 
 export default function main() {
@@ -18,6 +19,7 @@ export default function main() {
           <About />
         </div>
         <Contact/>
+        <Footer/>
       </main>
   );
 }
