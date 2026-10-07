@@ -54,8 +54,9 @@ export default function Contact() {
             </div>
 
             </div>
+
             {/* Map */}
-            <div className="rounded-2xl overflow-hidden shadow-md min-h-72">
+            <div className="rounded-2xl overflow-hidden shadow-lg min-h-72">
             <iframe
                 src="https://www.google.com/maps?q=123+Main+St,+San+Jose,+CA&output=embed"
                 title="Map of our location"
@@ -63,8 +64,9 @@ export default function Contact() {
                 loading="lazy"
             />
             </div>
+
             {/* Form */}
-            <form onSubmit={handleSubmit} className="md:col-span-2 bg-white rounded-2xl p-6 shadow-md">
+            <form onSubmit={handleSubmit} className="md:col-span-2 bg-white rounded-2xl p-6 shadow-lg">
             <h4 className="text-lg font-bold mb-4">Send us a message</h4>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">

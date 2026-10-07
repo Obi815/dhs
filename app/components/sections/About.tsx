@@ -43,7 +43,7 @@ export default function About() {
         {/* the 2x2 cards */}
         <div className="grid grid-cols-2 gap-4 mt-8">
           {highlights.map((item) => (
-            <div key={item.title} className="rounded-2xl bg-white p-4  border border-sky-100">
+            <div key={item.title} className="rounded-2xl bg-white p-4  border border-sky-100 shadow-md">
               <h4 className="font-bold text-sky-500">{item.title}</h4> 
               <p className="text-sm text-[#3C4A4E] mt-1">{item.text}</p>
             </div>
