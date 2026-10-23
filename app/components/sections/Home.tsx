@@ -14,9 +14,9 @@ export default function Home() {
 
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
-        <h1 className="text-4xl sm:text-6xl lg:text-8xl leading-tight text-sky-500 font-semibold p-2 md:p-4">Direct Health Services</h1>
-        <p className="text-2xl sm:text-4xl lg:text-6xl italic font-[cursive] text-sky-500 font-semibold">Where Every Day Has Purpose</p>
-        <span className="text-lg sm:text-2xl lg:text-4xl text-sky-500 font-semibold p-2 md:p-4">Serving San Jose California! </span>
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl leading-tight text-green-500 font-[cursive] font-semibold p-2 md:p-4">Direct Health Services</h1>
+        <p className="text-2xl sm:text-4xl lg:text-4xl italic font-[cursive] text-green-500 font-semibold">Where Every Day Has Purpose</p>
+        <span className="text-lg sm:text-2xl lg:text-2xl text-green-500  font-[cursive] font-semibold p-2 md:p-4">Serving San Jose California! </span>
       </div>
     </div>
   );

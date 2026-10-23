@@ -27,7 +27,7 @@ export default function About() {
       </div>
 
       <div>
-        <h3 className="text-2xl font-bold text-sky-500 pb-4">ABOUT US</h3>
+        <h3 className="text-2xl font-bold text-green-500 pb-4">ABOUT US</h3>
         <h1 className="font-bold text-3xl">Enriching lives through connection, community, and meaningful experiences.</h1>
         <p className="mt-4 text-[#3C4A4E] text-lg">
           At Direct Health Services (DHS), we specialize in providing a welcoming, non-medical Adult Social Day Program for 
@@ -44,7 +44,7 @@ export default function About() {
         <div className="grid grid-cols-2 gap-4 mt-8">
           {highlights.map((item) => (
             <div key={item.title} className="rounded-2xl bg-white p-4  border border-sky-100 shadow-md">
-              <h4 className="font-bold text-sky-500">{item.title}</h4> 
+              <h4 className="font-bold text-green-500">{item.title}</h4> 
               <p className="text-sm text-[#3C4A4E] mt-1">{item.text}</p>
             </div>
           ))}

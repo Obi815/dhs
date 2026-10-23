@@ -29,7 +29,7 @@ export default function Contact() {
           <div className="flex flex-col gap-4">
 
             {/* Hours box */}
-            <div className="bg-sky-500 text-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-green-500 text-white rounded-2xl p-6 shadow-lg">
                 <p className="text-xs tracking-widest">HOURS</p>
                 <p className="text-3xl font-extrabold leading-tight my-2">
                 Mon to Fri<br />8:30 AM to 4:30 PM
@@ -96,7 +96,7 @@ export default function Contact() {
                 className="w-full border border-gray-300 rounded-lg px-4 py-2.5 h-28 mb-3"
             />
 
-            <button type="submit" className="bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-2.5 rounded-lg">
+            <button type="submit" className="bg-green-500 hover:bg-sky-600 text-white font-bold px-6 py-2.5 rounded-lg">
                 Send message
             </button>
             </form>
